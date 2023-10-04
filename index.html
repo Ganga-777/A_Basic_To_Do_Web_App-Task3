@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do App</h1>
+
+        <div>
+            <label for="taskTitle">Title:</label>
+            <input type="text" id="taskTitle" placeholder="Enter task title">
+            <label for="taskDescription">Description:</label>
+            <textarea id="taskDescription" placeholder="Enter task description"></textarea>
+            <label for="taskInput">Task:</label>
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <div id="pendingTasks" class="task-list">
+            <h2>Pending Tasks</h2>
+            <ul id="pendingList"></ul>
+        </div>
+
+        <div id="completedTasks" class="task-list">
+            <h2>Completed Tasks</h2>
+            <ul id="completedList"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
